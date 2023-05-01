@@ -26,6 +26,7 @@
          <th>Rating</th>
          <th>Comment Heading</th>
          <th width="230">Comments</th>
+          <th>Price</th>
       </tr>
          {% for review in reviews %}
       <tr>
@@ -34,6 +35,7 @@
          <td>{{review['Rating']}}</td>
          <td>{{review['CommentHead']}}</td>
          <td>{{review['Comment']}} </td>
+          <td>{{review['Price']}}</td>
        {% endfor %}
    </table>
 </div>
